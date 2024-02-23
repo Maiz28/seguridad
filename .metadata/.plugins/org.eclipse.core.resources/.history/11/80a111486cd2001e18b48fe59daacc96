@@ -1,0 +1,5 @@
+package com.sda.persistencia.repository;
+
+public interface carrerasRepository {
+
+}

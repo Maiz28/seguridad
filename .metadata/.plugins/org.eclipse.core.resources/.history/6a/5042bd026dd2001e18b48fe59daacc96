@@ -1,0 +1,19 @@
+package com.sda.service;
+
+import java.util.Optional;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import com.sda.dto.carrerasDto;
+import com.sda.persistencia.entity.Modelos;
+
+public interface carrerasService {
+	
+Page<Modelos> findAll (Pageable pageable); 
+	
+	Optional<Modelos> findOneById(Integer modelosId); 
+	Modelos createOne(carrerasDto modelosDto); 
+	Modelos updateOneById( carrerasDto modelosDto, Integer modelosId);
+
+
+}

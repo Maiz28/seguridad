@@ -1,0 +1,24 @@
+package com.sda.persistencia.entity;
+
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+
+
+
+@Entity 
+public class carreras {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer id; 
+	private String nombre; 
+	private String competencia; 
+	private int tipo_carrera; 
+	
+	public static enum TipoCarrea{
+		ESCOLARIZADA, SEMIESCOLARIZADA 
+	}
+}
